@@ -87,11 +87,7 @@
   function showSuccessMessage() {
     const form = document.getElementById("wf-form-iso-form");
     const successDiv = document.createElement("div");
-    successDiv.innerHTML = `
-      <div style="background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px;">
-        <strong>Success!</strong> Thank you for your submission. We'll be in touch soon.
-      </div>
-    `;
+    successDiv.innerHTML = `<div style="background-color:#d4edda;color:#155724;padding:15px;border-radius:5px"><strong>Success!</strong> Thank you for your submission. We'll be in touch soon.</div>`;
     form.parentNode.insertBefore(successDiv, form.nextSibling);
     form.style.display = "none";
   }
@@ -100,11 +96,7 @@
   function showErrorMessage() {
     const form = document.getElementById("wf-form-iso-form");
     const errorDiv = document.createElement("div");
-    errorDiv.innerHTML = `
-      <div style="background-color: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; margin-top: 10px;">
-        <strong>Error!</strong> There was a problem submitting your form. Please try again.
-      </div>
-    `;
+    errorDiv.innerHTML = `<div style="background-color:#f8d7da;color:#721c24;padding:15px;border-radius:5px;margin-top:10px"><strong>Error!</strong> There was a problem submitting your form. Please try again.</div>`;
     form.parentNode.insertBefore(errorDiv, form.nextSibling);
   }
 

@@ -1,0 +1,14 @@
+{
+  "name": "iso-form-hubspot",
+  "version": "1.0.0",
+  "description": "HubSpot form integration for Webflow",
+  "scripts": {
+    "build": "bun build webflow-form-submission.js --outdir dist --minify",
+    "build:dev": "bun build webflow-form-submission.js --outdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
